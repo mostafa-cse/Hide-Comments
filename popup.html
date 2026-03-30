@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 200px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 15px;
+      font-size: 14px;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+    .toggle-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    label {
+      cursor: pointer;
+      flex-grow: 1;
+    }
+    input[type="checkbox"] {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 11px;
+      color: #777;
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>CF Clean View</h3>
+  
+  <div class="toggle-row">
+    <label for="hideComments">Hide Comments</label>
+    <input type="checkbox" id="hideComments">
+  </div>
+
+  <div class="toggle-row">
+    <label for="hideAttention">Hide "Pay Attention"</label>
+    <input type="checkbox" id="hideAttention">
+  </div>
+
+  <div class="toggle-row">
+    <label for="fullWidth">Full Width Layout</label>
+    <input type="checkbox" id="fullWidth">
+  </div>
+
+  <div class="footer">
+    Refresh page after changes
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

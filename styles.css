@@ -20,3 +20,23 @@
 .blog-entry-content {
     width: 100% !important;
 }
+/* 1. Hide Comments */
+body.cf-ext-hide-comments .comments {
+    display: none !important;
+}
+
+/* 2. Full Width Layout */
+body.cf-ext-full-width .content {
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: 0 auto !important;
+}
+
+body.cf-ext-full-width .sidebar {
+    display: none !important;
+}
+
+/* 3. Hide Specific Elements (like Pay Attention) */
+.cf-ext-hidden-element {
+    display: none !important;
+}

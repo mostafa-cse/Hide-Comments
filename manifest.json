@@ -1,19 +1,26 @@
 {
   "manifest_version": 3,
   "name": "Codeforces Clean View",
-  "version": "1.0",
-  "description": "Hides comments and makes blog pages full width on Codeforces.",
+  "version": "1.1",
+  "description": "Hide comments, notices, and customize layout on Codeforces with toggles.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Codeforces Clean View Settings"
+  },
   "content_scripts": [
     {
       "matches": [
-        "https://codeforces.com/blog/*",
-        "https://www.codeforces.com/blog/*"
+        "https://codeforces.com/*",
+        "https://www.codeforces.com/*"
       ],
       "css": ["styles.css"],
       "js": ["content.js"]
     }
   ],
   "icons": {
-    "48": "icon.png" 
+    "48": "icon.png"
   }
 }
