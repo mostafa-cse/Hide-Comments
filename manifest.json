@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Clean View",
+  "version": "1.0",
+  "description": "Hides comments and makes blog pages full width on Codeforces.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/blog/*",
+        "https://www.codeforces.com/blog/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png" 
+  }
+}

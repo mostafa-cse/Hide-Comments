@@ -1,0 +1,22 @@
+/* 1. Hide the Comments Section */
+.comments {
+    display: none !important;
+}
+
+/* 2. Hide the Sidebar (Optional, makes it truly full width) */
+.sidebar {
+    display: none !important;
+}
+
+/* 3. Make the Main Content Full Width */
+.content {
+    max-width: 100% !important;
+    width: 95% !important; /* Leave a small margin for readability */
+    margin: 0 auto !important;
+    padding: 10px !important;
+}
+
+/* 4. Adjust the blog entry specific container if needed */
+.blog-entry-content {
+    width: 100% !important;
+}
